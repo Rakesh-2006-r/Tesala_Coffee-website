@@ -1,4 +1,22 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Tesla Coffee - Frontend Internship Assignment
+
+This project is a submission for the Front-End Development Internship Assignment. It reimagines a well-known brand (Tesla) into a completely different product category (premium smart coffee machines), fulfilling all assignment requirements.
+
+## Features
+
+- **Reimagined Brand**: Tesla as a high-performance, hyper-caffeinated coffee brand.
+- **Single Page Application**: A fully optimized, single-landing page built with Next.js.
+- **Responsive Design**: Flawlessly adapts to mobile, tablet, and desktop screens.
+- **Visual Design**: Clean, minimalist UI matching the brand's aesthetic (monochrome + red accents).
+- **Smooth Animations**: Uses Framer Motion to create engaging scroll animations.
+
+## Tech Stack
+
+- [Next.js](https://nextjs.org/) (App Router)
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [Lucide React](https://lucide.dev/) (Icons)
 
 ## Getting Started
 
@@ -16,21 +34,14 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Assignment Criteria Met
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- [x] Built with Next.js
+- [x] Single landing page only
+- [x] Fully responsive
+- [x] Strong focus on layout, colors, images, and CTAs to maximize selling capability
+- [x] Unique reimagined brand concept (Tesla -> Coffee)
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The live version of this project is hosted at: [Add Vercel Link Here]
