@@ -17,10 +17,10 @@ export default function Pricing() {
   const [orders, setOrders] = useState<Order[]>([]);
 
   const includes = [
-    "NOVA X Skateboard",
-    "Carbon Fiber Deck",
-    "Long-Range Battery",
-    "Smart Mobile App",
+    "Model C Brewer",
+    "Smart Mug",
+    "PureFlow Filter",
+    "Mobile App",
   ];
 
   const basePrice = 2499;
@@ -64,21 +64,21 @@ export default function Pricing() {
                 transition={{ duration: 0.6 }}
               >
                 <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight mb-2">Design Yours</h2>
-                <p className="text-gray-400 font-light mb-10 text-lg">NOVA X - Engineered for the first sip.</p>
+                <p className="text-gray-400 font-light mb-10 text-lg">Model C - Engineered for the first sip.</p>
                 
                 <div className="w-full aspect-[4/3] bg-neutral-950 rounded-2xl border border-neutral-800 flex items-center justify-center relative overflow-hidden group">
                   {/* Subtle dynamic lighting */}
-                  <div className="absolute inset-0 bg-gradient-to-tr from-blue-900/10 via-transparent to-transparent opacity-50" />
+                  <div className="absolute inset-0 bg-gradient-to-tr from-red-900/10 via-transparent to-transparent opacity-50" />
                   
                   {/* Highly realistic product image */}
                   <div className="relative w-full h-full transition-transform duration-1000 group-hover:scale-105">
                      <img 
-                       src="/nova-x.jpg" 
-                       alt="Tesla NOVA X Coffee Maker" 
+                       src="/model-c.jpg" 
+                       alt="Tesla Model C Coffee Maker" 
                        className="w-full h-full object-cover"
                      />
                      {/* FSD glow overlay when selected */}
-                     <div className={`absolute inset-0 bg-blue-600/20 mix-blend-color-burn transition-opacity duration-500 pointer-events-none ${isAddonSelected ? 'opacity-100' : 'opacity-0'}`} />
+                     <div className={`absolute inset-0 bg-red-600/20 mix-blend-color-burn transition-opacity duration-500 pointer-events-none ${isAddonSelected ? 'opacity-100' : 'opacity-0'}`} />
                      {/* Subtle bottom fade to blend with the container */}
                      <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-neutral-950 to-transparent pointer-events-none" />
                   </div>
@@ -118,7 +118,7 @@ export default function Pricing() {
                     <motion.div 
                       initial={{ opacity: 0, x: -10 }}
                       animate={{ opacity: 1, x: 0 }}
-                      className="absolute bottom-6 left-6 text-[10px] text-red-500 border border-blue-900 bg-blue-950/30 px-2 py-1 rounded font-mono tracking-widest uppercase"
+                      className="absolute bottom-6 left-6 text-[10px] text-red-500 border border-red-900 bg-red-950/30 px-2 py-1 rounded font-mono tracking-widest uppercase"
                     >
                       Autopilot Linked
                     </motion.div>
@@ -133,7 +133,7 @@ export default function Pricing() {
             
             {/* Base Product */}
             <div className="mb-12 pb-10 border-b border-neutral-900">
-              <h3 className="text-3xl font-medium text-white mb-2 tracking-tight">NOVA X Starter Kit</h3>
+              <h3 className="text-3xl font-medium text-white mb-2 tracking-tight">Model C Starter Kit</h3>
               <p className="text-gray-400 font-light mb-8">${basePrice} Base Configuration</p>
               
               <h4 className="text-xs text-neutral-500 tracking-widest uppercase mb-4 font-semibold">Included Package</h4>
@@ -155,7 +155,7 @@ export default function Pricing() {
                 onClick={() => setIsAddonSelected(!isAddonSelected)}
                 className={`w-full flex items-center justify-between p-6 rounded-xl border transition-all cursor-pointer ${
                   isAddonSelected 
-                  ? 'border-blue-600 bg-blue-950/20' 
+                  ? 'border-red-600 bg-red-950/20' 
                   : 'border-neutral-800 bg-black hover:border-neutral-600'
                 }`}
               >
@@ -166,7 +166,7 @@ export default function Pricing() {
                 <div className="flex items-center gap-6">
                   <span className="text-gray-400 font-medium">+${addonPrice}</span>
                   <div className={`w-6 h-6 rounded-full border flex items-center justify-center transition-colors ${
-                    isAddonSelected ? 'bg-blue-600 border-blue-600' : 'border-neutral-600'
+                    isAddonSelected ? 'bg-red-600 border-red-600' : 'border-neutral-600'
                   }`}>
                     {isAddonSelected && <Check size={14} className="text-white" />}
                   </div>
@@ -193,7 +193,7 @@ export default function Pricing() {
                 }`}
                 whileTap={{ scale: 0.98 }}
               >
-                {orderState === "idle" && "Order NOVA X"}
+                {orderState === "idle" && "Order Model C"}
                 {orderState === "processing" && (
                   <>
                     <Loader2 size={18} className="animate-spin" />
@@ -235,8 +235,8 @@ export default function Pricing() {
                         >
                           <div className="flex flex-col">
                             <span className="text-sm font-medium text-white flex items-center gap-2">
-                              NOVA X 
-                              {order.addon && <span className="text-[10px] bg-blue-900/30 text-blue-400 px-1.5 py-0.5 rounded tracking-wider">FSD Active</span>}
+                              Model C 
+                              {order.addon && <span className="text-[10px] bg-red-900/30 text-red-400 px-1.5 py-0.5 rounded tracking-wider">FSD Active</span>}
                             </span>
                             <span className="text-[10px] text-neutral-500 font-mono mt-1">
                               ID: {order.id} • {order.date}

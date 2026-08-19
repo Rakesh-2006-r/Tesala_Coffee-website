@@ -100,7 +100,7 @@ export default function Specs() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            NOVA X Specs
+            Model C Specs
           </motion.h2>
           
           <div className="grid grid-cols-2 gap-x-8 gap-y-12">
